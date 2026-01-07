@@ -5,13 +5,13 @@ import { SearchBox } from './components/search-box/search-box.component.jsx';
 
 import './App.css';
 
-class App extends Component { 
+class App extends Component {
   constructor() {
     super();
 
     this.state = {
       monsters: [],
-      searchField: ''
+      searchField: '',
     }
   }
 
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   handleChange = (e) =>
-    this.setState({ searchField: e.target.value });
+    this.setState({ searchField: e.target.value , title: e.target.value});
   
   render() {
     const { monsters, searchField } = this.state;
